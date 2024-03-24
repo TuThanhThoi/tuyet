@@ -1,0 +1,30 @@
+body {
+  background-image: url(./a.jpg);
+  
+}
+.snow {
+  color: #fff;
+  font-size: 2em;
+  position: fixed;
+  animation: fall 4s infinite linear, wave 4s ease-in-out infinite alternate;
+  filter: blur(0.8px);
+  top: 0;
+  opacity: 0.8;
+
+}
+@keyframes fall {
+  0% {
+      top:0;
+  }
+  100%{
+      top: 100%;
+  }
+}
+@keyframes wave {
+  0% {
+      transform: translateX(0);
+  }
+  100%{
+      transform: translateX(80px);
+  }
+}
